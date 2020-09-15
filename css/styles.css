@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -------------- Header ------------------------*/
+header {
+    background: url(../img/headerr.jpg) #B2B2B2;
+    background-position: center;
+}
+
+header .menu {
+    margin: 50px 0;
+    text-align: right;
+}
+
+header .menu a {
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+header .container-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 150px 0;
+}
+
+header .container-text .text {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+header .container-text .text h1,
+header .container-text .text h2 {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+header .container-text .text .name {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 40px;
+}
+
+header .container-text .text .profesion {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+/*------------------ Main -----------------*/
+.main .about .container-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .about .container-about .photo {
+    width: 50%;
+    padding: 5px;
+    margin: 70px 0;
+    text-align: center;
+}
+
+.main .about .container-about .text {
+    width: 50%;
+    padding: 5px;
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.main .about .photo img {
+    vertical-align: top;
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .about .text {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.main .about .text .title,
+.main .works .title,
+footer .contact .title {
+    font-size: 2rem;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #0E4489;
+    text-align: center;
+}
+
+.main .works {
+    background: #f2f2f2;
+    padding: 50px 0;
+}
+
+.main .works .container {
+    overflow: hidden;
+}
+
+.main .works .container-works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .works .container-works .work {
+    width: 33.3%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.main .works .container-works .work .image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main .works .container-works .work .image img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.main .works .container-works .work .description {
+    text-align: center;
+}
+
+.main .works .container-works .work .name {
+    font-weight: 700;
+    color: #387bea;
+    margin-bottom: 10px;
+}
+
+.main .works .container-works .work .category {
+    font-size: 0.75rem;
+    color: #636363;
+}
+
+/*---------------- footer --------------------- */
+footer .contact {
+    padding: 60px 0;
+}
+
+footer .contact .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"],
+footer .contact .form textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    color: #a4a4a4;
+}
+
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"] {
+    width: 48%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+footer .contact .form textarea {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+footer .contact .form .button {
+    margin: auto;
+    background: #3895ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+footer .contact .form .button:hover {
+    background: #387bea;
+}
+
+footer .social-network {
+    background: #1e2b38;
+    padding: 80px 0;
+}
+
+footer .social-network .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-network a {
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    margin: 0 25px;
+    border-radius: 5px;
+}
+
+footer .social-network .facebook:hover {
+    background: #3b5998;
+}
+
+footer .social-network .github:hover {
+    background: #666666;
+}
+
+footer .social-network .instagram:hover {
+    background: #3f729b;
+}
+
+/* --------- Responsive Web ------------- */
+@media screen and (max-width:768px) {
+    header .menu {
+        text-align: center;
+    }
+
+    .main .works .container .work {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header .container-text .text .name {
+        font-size: 1rem;
+    }
+    
+    header .container-text .text .profesion {
+        font-size: 0.75rem;
+    }
+
+    .main .works .container .work,
+    .main .about .container-about .photo,
+    .main .about .container-about .text {
+        width: 100%;
+        padding: 5px;
+    }
+}
